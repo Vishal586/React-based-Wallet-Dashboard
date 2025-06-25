@@ -1,0 +1,22 @@
+/* themetoggle.css */
+
+button {
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* Light mode button */
+button {
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  color: #000000;
+}
+
+/* Dark mode styles using Tailwind's dark class */
+.dark button {
+  background-color: #374151; /* Tailwind gray-700 */
+  color: #ffffff;
+}
