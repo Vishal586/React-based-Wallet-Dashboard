@@ -1,0 +1,134 @@
+/* Wallet Dashboard Styled Like Grid C7 */
+.wallet-dashboard {
+  margin-top: -42px;
+  margin-bottom: -128px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--clr-jet); /* match with your theme variable */
+  border-radius: 12px;
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wallet-dashboard button {
+  margin-left: -46px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: var(--clr-pumpkin); /* matching accent color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wallet-dashboard button:hover {
+  background-color: #d35400; /* darker shade for hover */
+}
+
+.wallet-dashboard .data-list {
+  margin-left: -20px;
+}
+
+.wallet-dashboard .data-item {
+  margin-bottom: 20px;
+}
+
+.wallet-dashboard .data-item-value {
+  margin-top: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+.wallet-dashboard p {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.wallet-dashboard strong {
+  font-weight: 500;
+  color: var(--clr-pumpkin);
+}
+
+/* WalletDashboard component style aligned with grid-c8 */
+.grid-c8-content {
+  padding-top: 1rem;
+}
+
+.connect-btn {
+  padding: 10px 18px;
+  background-color: var(--clr-pumpkin);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-btn:hover {
+  background-color: #d35400;
+}
+
+.wallet-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  word-break: break-word;
+} 
+
+/* Icon button (top-right plus) */
+.grid-c-title-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.grid-c-title-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover animation for icon */
+.grid-c-title-icon:hover {
+  transform: rotate(90deg);
+}
+
+/* Dropdown for plus icon options */
+.options-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options-dropdown button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.options-dropdown button:hover {
+  background-color: #d35400;
+}
+
+/* Grid content area */
+.grid-c8-content {
+  padding-top: 1rem;
+}
