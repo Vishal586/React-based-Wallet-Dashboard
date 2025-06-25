@@ -1,0 +1,258 @@
+/* Main grid container styles */
+.grid-one-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.grid-common {
+  padding: 20px;
+}
+
+.grid-c2 {
+  height: 100%;
+}
+
+/* Header styles */
+.grid-c-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.grid-c-title-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.grid-c-title-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.grid-c-title-icon:hover {
+  transform: scale(1.1);
+}
+
+.grid-c-title-icon img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Form styles */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.bg-green-500 {
+  background-color: #4CAF50;
+}
+
+.bg-blue-500 {
+  background-color: #2196F3;
+}
+
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+/* Transactions list styles */
+.grid-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.grid-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid-item {
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Transaction left side styles */
+.grid-item-l {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.bg-gray-300 {
+  background-color: #e0e0e0;
+}
+
+.w-10 {
+  width: 40px;
+}
+
+.h-10 {
+  height: 40px;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.ml-3 {
+  margin-left: 12px;
+}
+
+.block {
+  display: block;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+
+.text-gray-400 {
+  color: #9e9e9e;
+}
+
+/* Transaction right side styles */
+.grid-item-r {
+  display: flex;
+  align-items: center;
+}
+
+.space-x-3 > * + * {
+  margin-left: 12px;
+}
+
+.text-scarlet {
+  color: #ff5252;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .grid-common {
+    padding: 15px;
+  }
+
+  .grid-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .grid-item-r {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .mr-2 {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .mb-4 > input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .mb-4 > button {
+    width: 100%;
+  }
+}
